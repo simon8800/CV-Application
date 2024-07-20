@@ -1,18 +1,23 @@
 import FormField from './FormField';
 import './Form.css';
 
-function Form ({formTitle, inputs}) {
+function Form ({formTitle, inputs, parent, onChange}) {
   return (
     <>
-    <h2>{formTitle}</h2>
     <form>
-      {inputs.map(input => 
-        <FormField
-          name={input.name}
-          id={input.id}
-          type={input.type}
-        />
-      )}
+      <fieldset>
+        <legend>{formTitle}</legend>
+          {inputs.map(input => 
+            <FormField
+              parent={parent}
+              key={input.id}
+              name={input.name}
+              id={input.id}
+              type={input.type}
+              onChange={onChange}
+            />
+          )}
+      </fieldset>
     </form>
     </>
   )

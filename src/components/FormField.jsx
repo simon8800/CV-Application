@@ -1,8 +1,23 @@
-function FormField({name, id, inputType}) {
+import './FormField.css';
+
+function FormField({name, id, parent, type, onChange}) {
+  let inputType;
+  if (type === "textarea") {
+    inputType = <textarea
+      name={name}
+      parent={parent}
+      id={id}
+      type={type}
+      onChange={(e) => onChange(e)}
+    ></textarea>
+  } else {
+    inputType = <input name={name} parent={parent} id={id} type={type} onChange={(e) => onChange(e)}/>
+  }
+  
   return(
-    <div>
-      <label htmlFor="{id}">{name}: </label>
-      <input id={id} type={inputType} />
+    <div className="form-field">
+      <label htmlFor={id}>{name}</label>
+      {inputType}
     </div>
   )
 }

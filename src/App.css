@@ -1,0 +1,21 @@
+.app {
+  display: flex;
+}
+
+.editor {
+  margin-right: auto;
+}
+
+.editor form:not(:first-child) {
+  margin-top: 15px;
+}
+
+.preview {
+  margin-right: auto;
+}
+
+@media (max-width: 1000px) {
+  .app {
+    flex-direction: column;
+  }
+}
