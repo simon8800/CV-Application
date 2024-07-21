@@ -1,9 +1,11 @@
 import './Resume.css';
+import ResumeName from './ResumeName';
 
-function Resume() {
+function Resume({info}) {
+  const {firstName, lastName, email, phone} = info;
   return (
     <div className="resume">
-      <p>Hello</p>
+      {(firstName || lastName) ? <ResumeName firstName={firstName} lastName={lastName}/> : null}
     </div>
   )
 }

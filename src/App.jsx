@@ -6,7 +6,7 @@ import './App.css'
 function App() {
   const [info, setInfo] = useState({});
 
-  function handleChange(e) {
+  function handleChange(e, parent) {
     const key = e.target.id;
     const nextInfo = {
       ...info,
@@ -106,7 +106,7 @@ function App() {
       </div>
       <div className="preview">
           <h2>Preview</h2>
-          <Resume/>
+          <Resume info={info}/>
       </div>
     </div>
   )
