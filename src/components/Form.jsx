@@ -3,7 +3,6 @@ import './Form.css';
 
 function Form ({formTitle, inputs, parent, onChange}) {
   return (
-    <>
     <form>
       <fieldset>
         <legend>{formTitle}</legend>
@@ -19,7 +18,6 @@ function Form ({formTitle, inputs, parent, onChange}) {
           )}
       </fieldset>
     </form>
-    </>
   )
 }
 

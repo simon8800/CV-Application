@@ -1,0 +1,15 @@
+div.personal {
+  display: flex;
+  justify-content: space-between;
+}
+
+.personal h1 {
+  font-size: 3rem;
+}
+
+.personal .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

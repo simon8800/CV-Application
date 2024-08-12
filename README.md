@@ -7,7 +7,7 @@ A small application where users can input their information to generate a résum
 Things to deliever on
 
 - [X] User can add generation information like name, email, and phone number
-- [] User can add educational experience (school name, title of study, and date of study)
+- [X] User can add educational experience (school name, title of study, and date of study)
 - [X] User can add practical experience (company name, position title, main responsibilities of the job, date from and until when you worked for that company)
 - [] User can see a preview of their résumé
 - [] User can export their résumé as a PDF
@@ -31,3 +31,4 @@ Things I've put into place so far
 
 - State:
   - Storing all inputs from general info in a single state
+- Form component takes all the inputs needed as props
