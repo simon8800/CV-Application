@@ -6,7 +6,7 @@ import './App.css'
 function App() {
   const [info, setInfo] = useState({});
 
-  function handleChange(e) {
+  function handleChange(e, parent) {
     const key = e.target.id;
     const nextInfo = {
       ...info,

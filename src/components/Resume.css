@@ -1,7 +1,12 @@
 .resume {
   border: 1px solid black;
+<<<<<<< HEAD
   min-width: 750px;
   min-height: 1000px;
   font-family:'Times New Roman', Times, serif;
   padding: 15px;
+=======
+  width: 100%;
+  min-height: 1500px;
+>>>>>>> fe5400ac2d93a0aebd6ea344eea0892ddd5a2cd9
 }

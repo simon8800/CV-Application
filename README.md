@@ -25,6 +25,34 @@ Ideas and questions I have during development
 - How to handle multiple forms of the same type? (Experience and Education)
   - Let's just create one form for each first and then come back to figure it out... otherwise I'm not gonna get anywhere
 
+How should I structure the state for each form???
+
+```javascript
+{
+  "generalInfo": {
+    "firstName": "",
+    "lastName": "",
+    "email": "",
+    "phone": "",
+  },
+  "experience": {
+
+  },
+
+}
+```
+
+What would the components look like?
+
+```jsx
+<Resume>
+  <Name />
+  <Experience />
+  <Education />
+  <Skills />
+</Resume>
+```
+
 ## Implementations
 
 Things I've put into place so far
