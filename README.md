@@ -9,7 +9,7 @@ Things to deliever on
 - [X] User can add generation information like name, email, and phone number
 - [X] User can add educational experience (school name, title of study, and date of study)
 - [X] User can add practical experience (company name, position title, main responsibilities of the job, date from and until when you worked for that company)
-- [] User can see a preview of their résumé
+- [X] User can see a preview of their résumé
 - [] User can export their résumé as a PDF
 
 ## Thoughts

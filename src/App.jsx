@@ -11,7 +11,11 @@ function App() {
     const nextInfo = {
       ...info,
     };
-    nextInfo[key] = e.target.value;
+    if (e.target.type === "checkbox") {
+      nextInfo[key] = e.target.checked;
+    } else {
+      nextInfo[key] = e.target.value;
+    }
     setInfo(nextInfo);
   }
 

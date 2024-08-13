@@ -8,12 +8,32 @@ function Experience ({experience}) {
         {position && <p>{position}</p>}
         {companyName && <p>{companyName}</p>}
       </div>
-      {responsibilities && <p>{responsibilities}</p>}
+      {responsibilities && formatLongText(responsibilities).map(sentence => {
+        return(<p>{sentence}</p>)
+      })}
+      {startDate && <p>{employedDates(startDate, endDate, employed)}</p>}
     </div>  
     )
 }
 
-function dateMaker(startDate, endDate, employed) {
-  return;
+function employedDates(startDate = "", endDate = "", employed) {
+  // Return the following formats
+  // If employed: 11/1/23 - Current
+  // Else: 11/1/23 - 3/4/24
+  let dates = ""
+  if (employed) {
+    dates = startDate + " - " + "Current";
+  } else {
+    dates = startDate + " - " + endDate;
+  }
+
+  return dates;
 }
+
+function formatLongText(text) {
+  let sentences = text.split("\n");
+  return sentences;
+}
+
+
 export default Experience;
